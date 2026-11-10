@@ -1,0 +1,9 @@
+# build output
+target/
+# keys and secrets: never commit these
+*.json
+!**/package.json
+!**/tsconfig.json
+.env
+*-keypair.json
+id.json

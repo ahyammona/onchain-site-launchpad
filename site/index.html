@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hosted on Solana</title>
+<style>
+  :root { color-scheme: light dark; --bg:#0b0d12; --fg:#e8eaf0; --accent:#9945ff; --accent2:#14f195; }
+  @media (prefers-color-scheme: light) { :root { --bg:#fafafa; --fg:#14161c; } }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; background:var(--bg); color:var(--fg);
+         font:16px/1.6 system-ui, sans-serif; padding:24px; }
+  main { max-width:560px; }
+  h1 { font-size:2rem; margin:0 0 .5rem; background:linear-gradient(90deg,var(--accent),var(--accent2));
+       -webkit-background-clip:text; background-clip:text; color:transparent; }
+  code { background:rgba(127,127,127,.18); padding:.1em .4em; border-radius:4px; }
+  button { font:inherit; padding:.5em 1em; border-radius:8px; border:0; background:var(--accent); color:#fff; cursor:pointer; }
+</style>
+</head>
+<body>
+<main>
+  <h1>This page lives in a Solana account</h1>
+  <p>The bytes you are reading were written to chain in many small transactions, stored Brotli-compressed,
+     and are served here after the gateway verified their SHA-256 hash.</p>
+  <p>Clicks this session: <code id="n">0</code> <button id="b">click</button></p>
+</main>
+<script>
+  let n = 0;
+  document.getElementById('b').onclick = () => { document.getElementById('n').textContent = ++n; };
+</script>
+</body>
+</html>

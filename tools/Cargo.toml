@@ -1,0 +1,23 @@
+[package]
+name = "onchain-site-tools"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "layout"
+path = "src/layout.rs"
+
+[[bin]]
+name = "upload"
+path = "src/bin/upload.rs"
+
+[[bin]]
+name = "gateway"
+path = "src/bin/gateway.rs"
+
+[dependencies]
+solana-sdk = "2.1"
+solana-client = "2.1"
+brotli = "7"
+sha2 = "0.10"
+tiny_http = "0.12"

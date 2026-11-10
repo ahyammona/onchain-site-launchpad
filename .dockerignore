@@ -1,0 +1,5 @@
+**/target
+**/.git
+**/*.json
+!tools/**/*.json
+.env

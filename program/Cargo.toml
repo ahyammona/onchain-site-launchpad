@@ -1,0 +1,13 @@
+[package]
+name = "onchain-site"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+solana-program = "2.1"
+
+[features]
+no-entrypoint = []
